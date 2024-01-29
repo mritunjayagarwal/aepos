@@ -1,38 +1,300 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+section {
+    padding: 100px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bnw {
+    filter: grayscale(100%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Top Bar */
+
+.top-bar {
+    background: #C3C3C3;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.top-bar p {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.595px;
+    text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Hero Section */
+
+.hero-section {
+    background: #000;
+}
+
+.hero-head {
+    color: #EDEFF4;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70.4px;
+    /* 110% */
+}
+
+.hero-para {
+    color: #B2B8CC;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 31.2px;
+    /* 130% */
+    letter-spacing: 0.24px;
+}
+
+.hero-btn {
+    border: unset;
+    outline: unset;
+    padding: 0.5em 1em;
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25.2px;
+    /* 140% */
+    letter-spacing: 0.09px;
+}
+
+/* Tokenomics Section */
+
+.tokenomic-card {
+    border-radius: 31px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: rgba(240, 240, 240, 0.18);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    padding: 1em;
+    height: 100%;
+}
+
+.tokenomic-img {
+    margin: 20px 0;
+}
+
+.tokenomic-head {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31.2px;
+    /* 130% */
+    letter-spacing: 0.18px;
+}
+
+.tokenomic-para {
+    color: #4C4C4C;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27px;
+    /* 150% */
+    letter-spacing: 0.18px;
+}
+
+/* About */
+
+.about {
+    background: #000;
+}
+
+.speed-wrapper {
+    border-radius: 31px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(5px);
+    padding: 1.5em;
+}
+
+.about-head {
+    color: #F7F8FA;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57.6px;
+    /* 240% */
+    letter-spacing: -0.52px;
+}
+
+.about-para {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27px;
+    /* 150% */
+    letter-spacing: 0.09px;
+}
+
+/* Fastest Blockchain Section */
+
+.fastest-blockchain-section {
+    background: #101010;
+}
+
+.fastest-blockchain-head {
+    color: #EDEFF4;
+    text-align: center;
+    font-family: Inter;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70.4px;
+    /* 207.059% */
+}
+
+.fastest-blockchain-para {
+    color: #B2B8CC;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 31.2px;
+    /* 130% */
+    letter-spacing: 0.24px;
+}
+
+.fastest-blockchain-card-para {
+    color: #B2B8CC;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27px;
+    /* 150% */
+    letter-spacing: 0.09px;
+    margin-top: 20px
+}
+
+/* Solutions Section */
+
+.solutions-head {
+    color: #000;
+    font-family: Inter;
+    font-size: 47.813px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57.6px;
+    /* 120.471% */
+    letter-spacing: -0.52px;
+}
+
+.solutions-para {
+    color: #4C4C4C;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27px;
+    /* 150% */
+    letter-spacing: 0.09px;
+}
+
+/* Authentication section */
+
+.authentication-section {
+    background: #000;
+}
+
+.authentication-head {
+    color: #F7F8FA;
+    font-family: Inter;
+    font-size: 47.813px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57.6px;
+    /* 120.471% */
+    letter-spacing: -0.52px;
+}
+
+.authentication-para {
+    color: #B2B8CC;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27px;
+    /* 150% */
+    letter-spacing: 0.09px;
+}
+
+/* Tia Ai Section */
+
+.tia-ai-head {
+    color: #000;
+    font-family: Inter;
+    font-size: 47.813px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57.6px;
+    /* 120.471% */
+    letter-spacing: -0.52px;
+}
+
+.tia-ai-para {
+    color: #4C4C4C;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25.2px;
+    /* 140% */
+    letter-spacing: 0.18px;
+}
+
+/* Partners Section */
+
+.partners-section {
+    background: #000;
+}
+
+.partners-head {
+    color: #EDEFF4;
+    text-align: center;
+    font-family: Inter;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70.4px;
+    /* 207.059% */
+}
+
+.partners-para {
+    color: #B2B8CC;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 31.2px;
+    /* 130% */
+    letter-spacing: 0.24px;
 }
