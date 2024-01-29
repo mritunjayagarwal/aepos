@@ -28,18 +28,25 @@ function App() {
       <main>
         <section className='top-bar'>
           <div className='container'>
-              <div className='d-flex align-items-center justify-content-center pt-3'>
-                <p class = "px-2"><img src={require('./images/T.png')} className='img-fluid' style={{marginTop: "-5px"}} alt="" />Get Your $TET Tokens</p>
-                <p class = "px-2">/</p>
-                <p class = "px-2"><img src={require('./images/T.png')} className='img-fluid' style={{marginTop: "-5px"}} alt="" />Stake $TET</p>
-              </div>
+            <div className='d-flex align-items-center justify-content-center pt-3'>
+              <p class="px-2"><img src={require('./images/T.png')} className='img-fluid' style={{ marginTop: "-5px" }} alt="" />Get Your $TET Tokens</p>
+              <p class="px-2">/</p>
+              <p class="px-2"><img src={require('./images/T.png')} className='img-fluid' style={{ marginTop: "-5px" }} alt="" />Stake $TET</p>
+            </div>
           </div>
         </section>
         <section className='hero-section'>
-          <img src={require('./images/logo.png')} style = {{position: "absolute", right: "-100px" }} alt="" />
+          <img src={require('./images/logo.png')} className='hero-prop' alt="" />
           <div className='container'>
             <div className='row'>
-              <div className='col-lg-6'>
+            <div className='order-md-2 col-lg-6 d-flex align-items-center justify-content-center'>
+                <div className='tokenomic-card' style={{ width: "80%" }}>
+                  <img src={require('./images/about/2.png')} className='img-fluid' style={{ width: "60%" }} alt="" />
+                  <h1 className='text-white mt-4' style={{ fontSize: "80px" }}>AePOS</h1>
+                  <p className='tokenomic-para'>Network</p>
+                </div>
+              </div>
+              <div className='order-md-1 col-lg-6'>
                 <h1 className='hero-head'>The Fastest Blockchain for All Industries</h1>
                 <p className='hero-para'>
                   Tectum is the world’s fastest blockchain – a lightning-fast distributed
@@ -49,17 +56,11 @@ function App() {
                 <p className='hero-para' style={{ fontSize: "18px" }}>Trade $TET Now</p>
                 <button className='hero-btn'>Get Wallet</button>
               </div>
-              <div className='col-lg-6 d-flex align-items-center justify-content-center'>
-                <div className='tokenomic-card' style = {{width: "80%"}}>
-                  <img src={require('./images/about/2.png')} className='img-fluid' style = {{width: "60%"}} alt="" />
-                  <h1 className='text-white mt-4' style = {{fontSize: "80px"}}>AePOS</h1>
-                  <p className='tokenomic-para'>Network</p>
-                </div>
-              </div>
             </div>
           </div>
         </section>
-        <section id="tokenomics">
+        <section className="tokenomics">
+          <img src={require('./images/tokenomics-prop.png')} className='tokenomics-prop-1' alt="" />
           <div className='container'>
             <div className='row'>
               {
@@ -77,43 +78,47 @@ function App() {
           </div>
         </section>
         <section className='about'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-lg-6'>
-                <div className="speed-wrapper">
-                  <img src={Speed} className='img-fluid' alt="" />
+          <div className='black-wrapper'>
+            <div className='container'>
+              <div className='row'>
+                <div className='col-lg-6'>
+                  <div className="speed-wrapper">
+                    <img src={Speed} className='img-fluid' alt="" />
+                  </div>
                 </div>
-              </div>
-              <div className='col-lg-6'>
-                <h1 className='about-head'>The Fastest Blockchain</h1>
-                <p className='about-para'>The Tectum Blockchain exceeds 1 million transactions per second using a proprietary Proof-of-Utility Consensus.</p>
-                <p className='about-para'>This makes Tectum the perfect solution as an “Overlay Network” for numerous blockchain systems such as Bitcoin.</p>
-                <p className='about-para'>Learn about Tectum Blockchain</p>
+                <div className='col-lg-6'>
+                  <h1 className='about-head'>The Fastest Blockchain</h1>
+                  <p className='about-para'>The Tectum Blockchain exceeds 1 million transactions per second using a proprietary Proof-of-Utility Consensus.</p>
+                  <p className='about-para'>This makes Tectum the perfect solution as an “Overlay Network” for numerous blockchain systems such as Bitcoin.</p>
+                  <p className='about-para'>Learn about Tectum Blockchain</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <section className='fastest-blockchain-section'>
-          <div className='container'>
-            <h1 className='text-center fastest-blockchain-head'>The Fastest Blockchain for All Industries</h1>
-            <p className='text-center fastest-blockchain-para'>Tectum is the world’s fastest blockchain – a lightning-fast distributed ledger powering the superconductive digital financial environment of the future.</p>
-            <div className='row mt-5'>
-              <div className='col-lg-4'>
-                <div className='tokenomic-card d-flex align-items-center justify-content-center'>
-                  <div>
-                    <img src={require('./images/about/1.png')} className='img-fluid' alt="" />
-                    <p className='fastest-blockchain-card-para'>Exceeds 1 million TPS and provides instant event status delivery & ownership updates.</p>
+          <div className='black-wrapper'>
+            <div className='container'>
+              <h1 className='text-center fastest-blockchain-head'>The Fastest Blockchain for All Industries</h1>
+              <p className='text-center fastest-blockchain-para'>Tectum is the world’s fastest blockchain – a lightning-fast distributed ledger powering the superconductive digital financial environment of the future.</p>
+              <div className='row mt-5'>
+                <div className='col-lg-4'>
+                  <div className='tokenomic-card d-flex align-items-center justify-content-center'>
+                    <div>
+                      <img src={require('./images/about/1.png')} className='img-fluid' alt="" />
+                      <p className='fastest-blockchain-card-para'>Exceeds 1 million TPS and provides instant event status delivery & ownership updates.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className='col-lg-4 p-5'>
-                <img src={require('./images/about/2.png')} className='img-fluid' alt="" />
-              </div>
-              <div className='col-lg-4'>
-                <div className='tokenomic-card d-flex align-items-center justify-content-center'>
-                  <div>
-                    <img src={require('./images/about/1.png')} className='img-fluid' alt="" />
-                    <p className='fastest-blockchain-card-para'>Exceeds 1 million TPS and provides instant event status delivery & ownership updates.</p>
+                <div className='col-lg-4 p-5'>
+                  <img src={require('./images/about/2.png')} className='img-fluid' alt="" />
+                </div>
+                <div className='col-lg-4'>
+                  <div className='tokenomic-card d-flex align-items-center justify-content-center'>
+                    <div>
+                      <img src={require('./images/about/1.png')} className='img-fluid' alt="" />
+                      <p className='fastest-blockchain-card-para'>Exceeds 1 million TPS and provides instant event status delivery & ownership updates.</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -236,7 +241,51 @@ function App() {
             </div>
           </OwlCarousel>
         </section>
-      </main>
+        <section style={{ background: "#000" }}>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-lg-6'>
+                <h1 className='final-head-1'>Let’s go</h1>
+                <h1 className='final-head-2 mt-4'>Tectum Testnet</h1>
+                <p className='final-para mt-4'>Start with our Test Node</p>
+                <button className='hero-btn mt-4'>Start with our Test Node</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-lg-6'>
+                <img src={require('./images/tectum.png')} className='img-fluid' style={{ marginTop: "-10px" }} alt="" />
+              </div>
+              <div className='col-lg-3'>
+                <div>
+                  <div className='d-flex justify-content-center'>
+                    <div className='mr-4'>
+                      <p className='footer-item'>Product</p>
+                    </div>
+                    <div className='mr-4'>
+                      <p className='footer-item'>About</p>
+                    </div>
+                    <div className='mr-4'>
+                      <p className='footer-item'>FAQ</p>
+                    </div>
+                    <div className='mr-4'>
+                      <p className='footer-item'>Blog</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3'>
+                <button type="button" class="btn uni-btn btn-block">
+                  Join Presale
+                </button>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </main >
     </>
   );
 }
