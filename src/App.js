@@ -1,4 +1,5 @@
 import './App.css';
+import './Stars.css';
 import tokenomics from './components/Tokenomics/tokenomics';
 import Speed from './images/Speed.png';
 import OwlCarousel from 'react-owl-carousel';
@@ -37,6 +38,9 @@ function App() {
           </div>
         </section>
         <section className='hero-section'>
+          <div id='stars'></div>
+          <div id='stars2'></div>
+          <div id='stars3'></div>
           <img src={require('./images/logo.png')} className='hero-prop' alt="" />
           <div className='container'>
             <div className='row'>
@@ -168,7 +172,7 @@ function App() {
             <div className='row'>
               <div className='col-lg-6 d-flex align-items-center justify-content-center'>
                 <Fade delay={1000} direction='left'>
-                <img src={require('./images/authentication.png')} className='img-fluid bnw' alt="" />
+                  <img src={require('./images/authentication.png')} className='img-fluid bnw' alt="" />
                 </Fade>
               </div>
               <div className='col-lg-6'>
@@ -191,19 +195,19 @@ function App() {
             <div className='row'>
               <div className='col-lg-6'>
                 <Fade cascade>
-                <h1 className='tia-ai-head'>Crypto Solutions for Business</h1>
-                <p className='tia-ai-para'>
-                  The SoftNote is the first ever ‘transactionless’ product with instant payment zero-fee processing for an end-user. The SoftNote has ‘physical cash’ elements, for example, a Bitcoin SoftNote bill can be printed on paper, does not require a confirmation from the Bitcoin network, incurs no fees, and has no geographical boundaries.
-                </p>
-                <p className='tia-ai-para'>
-                  Therefore, the SoftNote can be used person-to- person, sent over any messenger application as a picture file or sent by wallet to wallet. A SoftNote is secured by a passcode rendering it useless to an unauthorised possessor.
-                </p>
-                <p>Learn about SoftNote</p>
+                  <h1 className='tia-ai-head'>Crypto Solutions for Business</h1>
+                  <p className='tia-ai-para'>
+                    The SoftNote is the first ever ‘transactionless’ product with instant payment zero-fee processing for an end-user. The SoftNote has ‘physical cash’ elements, for example, a Bitcoin SoftNote bill can be printed on paper, does not require a confirmation from the Bitcoin network, incurs no fees, and has no geographical boundaries.
+                  </p>
+                  <p className='tia-ai-para'>
+                    Therefore, the SoftNote can be used person-to- person, sent over any messenger application as a picture file or sent by wallet to wallet. A SoftNote is secured by a passcode rendering it useless to an unauthorised possessor.
+                  </p>
+                  <p>Learn about SoftNote</p>
                 </Fade>
               </div>
               <div className='col-lg-6 d-flex align-items-center justify-content-center'>
                 <Fade delay={1000} direction='right'>
-                <img src={require('./images/Tia-ai.png')} className='img-fluid bnw' alt="" />
+                  <img src={require('./images/Tia-ai.png')} className='img-fluid bnw' alt="" />
                 </Fade>
               </div>
             </div>
@@ -243,7 +247,7 @@ function App() {
             </div>
           </OwlCarousel>
         </section>
-        <section style={{paddingTop: 0}}>
+        <section style={{ paddingTop: 0 }}>
           <div className='container mb-5'>
             <h1 className='partners-head' style={{ color: "#000" }}>Our Partners</h1>
           </div>
@@ -273,10 +277,10 @@ function App() {
             <div className='row'>
               <div className='col-lg-6'>
                 <Fade cascade>
-                <h1 className='final-head-1'>Let’s go</h1>
-                <h1 className='final-head-2 mt-4'>Tectum Testnet</h1>
-                <p className='final-para mt-4'>Start with our Test Node</p>
-                <button className='hero-btn mt-4'>Start with our Test Node</button>
+                  <h1 className='final-head-1'>Let’s go</h1>
+                  <h1 className='final-head-2 mt-4'>Tectum Testnet</h1>
+                  <p className='final-para mt-4'>Start with our Test Node</p>
+                  <button className='hero-btn mt-4'>Start with our Test Node</button>
                 </Fade>
               </div>
             </div>
